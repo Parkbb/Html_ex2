@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<title>짭플러스</title>
+<title>짭로그인</title>
 <link href="/Html_ex2/images/favicon.ico" rel="icon" type="image/x-icon" />
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <link href="/Html_ex2/css/common.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="/Html_ex2/css/login.css" rel="stylesheet">
+
 </head>
 <body>
 <header>
@@ -31,53 +31,16 @@
 			</ul>
 </header>
 
-<section class="s1">
-	<img src="images/main.jpg">
-	<div class="s1_images">
-		<img src="images/1.jpg">
-		<img src="images/2.jpg">
-		<img src="images/3.jpg">
+<section>
+
+	<div>
+		왜안보여
+		<div class="title_wrap">
+			<h1>로그인</h1>
+		</div>
 	</div>
 </section>
 
-<section class="s2">
-	<div class = "title">
-		<div class="title_wrap">
-			<img src="images/what.png">
-		</div>
-	</div>
-	<div class="s2_menu">
-		
-			<ul>
-				<li class="li_head"><img src = "images/menu1/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu2/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu3/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu4/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/5.png"></a></li>
-			</ul>
-	</div>
-</section>
 
 <footer>
 	<div class="footer_wrap">

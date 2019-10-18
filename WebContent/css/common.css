@@ -31,6 +31,8 @@ header{
 	margin-right: 25px;
 	font-size: 16pt;
 	font-weight: bold;
+	letter-spacing: -2pt;
+	
 }
 .header_subnav{
 	float: right;
@@ -41,6 +43,8 @@ header{
 	margin-right: 10px;
 	font-size: 13pt;
 	font-weight: bold;
+	letter-spacing: -2pt;
+
 }
 .header_wrap a{
 	color: #444444;
@@ -51,7 +55,72 @@ header{
 }
 /**********footer*************/
 footer{
-	
-	
+	width: 100%;
+	min-width: 1340px;
+	height: 142px;
+	background-color: #303030;
+}
+
+.footer_wrap{
+	width: 1340px;
+	height: 142px;
+	margin-top: 40px;
+	margin: auto;
 	
 }
+.footer_nav{
+	width: 1030px;
+	height: 100px;
+	float: left;
+	margin-top : 30px;
+	color : #AAAAAA;
+	font-size: 11pt;
+}
+.footer_nav > ul > li{
+	float: left;
+	margin-right: 5px;
+}
+footer a{
+	color: #aaaaaa;
+}
+.footer_nav_m1{
+	margin-bottom: 40px;
+}
+.footer_nav_m2{
+	font-size: 9pt;
+	margin-bottom: 20px;
+	margin-right: 10px;
+
+}
+span{
+	font-weight: bold;
+}
+.footer_subnav{
+	width:295px;
+	height: 100px;
+	float: right;
+	margin-top: 30px;
+	color: #AAAAAA;
+}
+.select{
+	width: 295px;
+	height: 33px;
+	background-color: #303030;
+	color: #aaaaaa;
+	border: 1px solid #aaaaaa;
+	margin-bottom: 10px;
+}
+.footer_icon_wrap{
+	width: 169px;
+	height: 38px;
+	margin-left: 126px;
+}
+.footer_icon_wrap > a{
+	border: 1px solic white;
+	border-radius: 10pt;
+}
+.footer_last{
+	font-size: 8pt;
+	text-align: right;
+}
+
