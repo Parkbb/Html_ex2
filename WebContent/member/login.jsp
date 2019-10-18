@@ -15,7 +15,7 @@
 <header>
 	<div class="header_wrap">
 		<div class="logo">
-			<img src = "/Html_ex2/images/logo_uplus.png">
+			<a href="/Html_ex2/index.jsp"><img src = "/Html_ex2/images/logo_uplus.png"></a>
 		</div>
 		<ul class="header_nav">
 				<li><a href="#">U+Shop</a></li>
@@ -29,16 +29,24 @@
 				<li><a href="/Html_ex2/member/login.jsp">로그인</a></li>
 				<li><a href="#">간편조회</a></li>
 			</ul>
+	</div>
 </header>
 
 <section>
-
-	<div>
-		왜안보여
-		<div class="title_wrap">
+		
+		<div id="title_wrap">
 			<h1>로그인</h1>
 		</div>
-	</div>
+		<div class = middle>
+			<div class="left">
+				<div id = "tit_warp">
+					<span>U+ID로 로그인하세요</span><br>
+					<span>(구)통합아이디로 로그인하면 U+ID전환 화면으로 이동합니다</span>
+				</div>
+			</div>
+			<div class="right">
+			</div>
+		</div>
 </section>
 
 
@@ -60,7 +68,7 @@
 				<li><span>대표이사</span> 하현회</li>
 				<li><span>사업자등록번호</span> 220-81-39939</li>
 				<li><span>통신판매신고</span> 제 2015-서울용산-00481호</li>
-				<li><a hred="#"><span>사업자정보확인</span></a></li>
+				<li><a href="#"><span>사업자정보확인</span></a></li>
 			</ul>
 			<ul class = "footer_nav_m2">
 				<li><span>고객센터</span></li>
