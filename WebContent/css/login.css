@@ -10,8 +10,7 @@ section{
 	height: 67px;
 	color: black;
 	margin:auto;
-	margin-top: 200px;
-	background-color: gray;
+	margin-top: 100px;
 }
 
 #title_wrap > h1 {
@@ -23,38 +22,165 @@ section{
 	height: 530px;
 	margin: auto;
 	margin-top : 40px;
-	background-color: lime;
 }
 .left{
 	width: 550px;
 	height: 530px;
-	background-color: olive;
 	float: left;
 	padding-top: 43px;
 	padding-bottom: 43px;
 	box-sizing: border-box;
-}
-.right{
-	width: 550px;
-	height: 530px;
-	background-color: orange;
-	float: left;	
+	border: 1px solid gray;
+	
 }
 .tit_wrap{
 	width: 549px;
 	height: 67px;
 }
-
-#tit_wrap > h2{
-	color: #303030;
+.login{
+	font-size: 23pt;
 	text-align: center;
+}
+.sub{
+	color: #aa36bb;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.input_id{
+	width: 408px;
+	height: 52px;
+	margin: 0 auto;
+	background-color: blue;
+}
+.input_pw{
+	width: 408px;
+	height: 52px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: green;
+}
+.login_botton{
+	width: 408px;
+	height: 52px;
+	margin : auto;
+	background-color: #b892c3;
+	border: 1px solid #b892c3;
+	border-radius: 3px;
+}
+.input_id > input{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 10px;
+	outline-color: #b892c3;
+}
+.input_pw > input{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 10px;
+	outline-color: #b892c3;
+}
+.login_botton  button{
+	width: 100%;
+	height: 100%;
+	background-color: #b892c3;
+	border: 1px solid #b892c3;
+	border-radius: 3px;
+	font-size: 15pt;
+}
+.login_checkbox{
+	width: 408px;
+	height: 50px;
+	margin: auto;
+	margin-top: 5px;
+	color: #666666;
+	font-size: 10pt;
+}
+.login_checkbox > label{
+	margin-right: 10px;
+}
+.right{
+	width: 550px;
+	height: 530px;
+	float: left;
+	background-color: #e8e8e8;
+	border: 1px solid gray;
+	box-sizing: border-box;
+	border-left: none;
+	padding: 43px 40px;
+}
+.right_up{
+	width: 468px;
+	height: 114px;
+}
+.right_down{
+	width: 468px;
+	height: 268px;
+	margin-top: 40px;
+	padding-top: 30px;
+	border-top: 1px dotted black;
+}
+.right_button{
+	width: 99px;
+	height: 31px;
+	text-align: center;
+	margin: auto;
+	margin-top: -30px;
+}
+.right_button > button{
+	width: inherit;
+	height: inherit;
+	border: 1px solid gray;
+	border-radius: 5pt;
+	background-color: #f5f0f7;
+}
+.dtitle_wrap{
+	width: 468px;
+	height: 63px;
 	
 }
+.dsub_wrap{
+	width: 468px;
+	height: 173px;
+}
+.dsub_wrap > div {
+	width: 136px;
+	height: 163px;
+	overflow: hidden;
+	float: left;
+}
+.mid{
+	margin: 0px 30px;
+	float: left;
+}
 
-span{
+.log_img{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.log_img > img {
+	width: inherit;
+	height: inherit;
+}
+.dsub_title{
+	width: 136px;
+	height: 22px;
+	color: #303030;
 	text-align: center;
-	color: #aa36bb;
-	font-size: 12pt;
-	font-style: normal;
-	
+}
+.dsub_button{
+	width: 73px;
+	height: 31px;
+	margin: auto;
+}
+.dsub_button button{
+	width: 73px;
+	height: 31px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #f5f0f7;
+	color: #666666;
 }
