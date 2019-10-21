@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<title>짭플러스</title>
+<title>회원가입</title>
 <link href="/Html_ex2/images/favicon.ico" rel="icon" type="image/x-icon" />
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <link href="/Html_ex2/css/common.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="../css/join2.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -32,51 +31,78 @@
 		</div>
 </header>
 
-<section class="s1">
-	<img src="images/main.jpg">
-	<div class="s1_images">
-		<img src="images/1.jpg">
-		<img src="images/2.jpg">
-		<img src="images/3.jpg">
-	</div>
-</section>
 
-<section class="s2">
-	<div class = "title">
-		<div class="title_wrap">
-			<img src="images/what.png">
-		</div>
+<section>
+	<div class = "title_wrap">
+		아이디 만들기
 	</div>
-	<div class="s2_menu">
-		
-			<ul>
-				<li class="li_head"><img src = "images/menu1/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu2/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu3/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu4/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/5.png"></a></li>
-			</ul>
+	<div class = "join_list">
+		<ul>
+			<li>이용약관 동의
+			</li>
+			<li>실명확인
+			<span><img src="../images/bracket.png" class = "img_bracket"></span>
+			</li>
+			<li class = "join_list_header">본인인증 및 회원정보 입력
+			<span><img src="../images/bracket2.jpg" class = "img_bracket"></span>
+			</li>
+			<li>회원가입 완료
+			<span><img src="../images/bracket.jpg" class = "img_bracket"></span>
+			</li>
+		</ul>
+	</div>
+	<div class ="subtotal_wrap">
+	<div class = "subtitle_wrap">
+	<h2>회원정보 입력</h2>
+	<div class="subtitle_notice">
+	*표시는 필수입력 항목입니다.
+	</div>
+	</div>
+	<table class = "join_table">
+		<tr>
+			<td class = "td_left">이름<span class = "join_notice">*</span></td>
+			<td class = "td_right"><input type="text" name="name" class ="input_text"></td>
+		</tr>
+		<tr>
+			<td class = "td_left">아이디<span class = "join_notice">*</span></td>
+			<td class = "td_right">
+				<input type="text" name="id"  class ="input_text">
+				<button>중복체크</button>
+				</td>
+		</tr>
+		<tr>
+			<td class = "td_left">비밀번호<span class = "join_notice">*</span></td>
+			<td class = "td_right">
+				<input type="password" name="pw"  class ="input_text"></td>
+		</tr>
+		<tr>
+			<td class = "td_left">비밀번호 확인<span class = "join_notice">*</span></td>
+			<td class = "td_right">
+				<input type="password" name="pw_check"  class ="input_text"></td>
+		</tr>
+		<tr>
+			<td class = "td_left">연락처<span class = "join_notice">*</span></td>
+			<td class = "td_right">
+				<select>
+					<option>선택</option>
+					<option>010</option>
+					<option>011</option>
+					<option>016</option>
+					<option>017</option>
+					<option>018</option>					
+				</select>
+				-
+				<input type="tel" name="phone" class="input_tel">
+				-
+				<input type="tel" name="phone2" class="input_tel">
+			</td>
+		</tr>	
+	</table>
+	
+	<div class = "button_wrap">
+		<div class="last_cancel"><a href="login.jsp"><input type="button" value="취소하기"></a></div>
+		<div class="last_agree"><a href="login.jsp"><input type="button" value="확인하기"></a></div>
+	</div>
 	</div>
 </section>
 

@@ -53,6 +53,12 @@ header{
 	text-decoration: underline;
 	
 }
+/**********section**********/
+section{
+	clear:both;
+	
+}
+
 /**********footer*************/
 footer{
 	width: 100%;

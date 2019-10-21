@@ -18,7 +18,7 @@
 			<a href="/Html_ex2/index.jsp"><img src = "/Html_ex2/images/logo_uplus.png"></a>
 		</div>
 		<ul class="header_nav">
-				<li><a href="#">U+Shop</a></li>
+				<li><a href="/Html_ex2/notice/notice.jsp">U+공지</a></li>
 				<li><a href="#">상품 서비스</a></li>
 				<li><a href="#">내 정보관리</a></li>
 				<li><a href="#">고객지원</a></li>
@@ -89,7 +89,7 @@
 						<div>
 							<div class="log_img"><img src="../images/login/join.png"></div>
 							<div class ="dsub_title">회원가입</div>
-							<div class="dsub_button"><a href="#"><button>바로가기</button></a></div>
+							<div class="dsub_button"><a href="join.jsp"><button>바로가기</button></a></div>
 						</div>
 					</div>
 				</div>

@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<title>짭플러스</title>
+<title>글쓰기</title>
 <link href="/Html_ex2/images/favicon.ico" rel="icon" type="image/x-icon" />
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <link href="/Html_ex2/css/common.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="../css/write.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -32,51 +31,54 @@
 		</div>
 </header>
 
-<section class="s1">
-	<img src="images/main.jpg">
-	<div class="s1_images">
-		<img src="images/1.jpg">
-		<img src="images/2.jpg">
-		<img src="images/3.jpg">
+<section>
+	<div class="title_wrap">
+	글쓰기
 	</div>
-</section>
-
-<section class="s2">
-	<div class = "title">
-		<div class="title_wrap">
-			<img src="images/what.png">
-		</div>
+	<div class="table_wrap">
+	<table>
+		<tr>
+			<td class="td_left">유형<span class="point">*</span></td>
+			<td class="td_small">
+				<select>
+					<option>유형 선택</option>
+					<option>모바일</option>
+					<option>인터넷</option>
+					<option>결합 서비스</option>
+					<option>인터넷 전화 및 homeBoy</option>
+					<option>Tv 서비스</option>
+					
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">제목<span class="point">*</span></td>
+			<td class="td_small"><input type="text" placeholder="제목 입력"></td>
+		</tr>
+		<tr>
+			<td class="td_left">내용<span class="point">*</span></td>
+			<td class="td_big"><textarea rows="5" cols="1"></textarea></td>
+		</tr>
+		<tr>
+			<td class="td_left">첨부파일</td>
+			<td class="td_big">
+				<div class="attatch_wrap">
+					<div class="attatch_text" >
+						<input type="text" readonly="readonly">
+						<button>찾아보기</button><br>
+						<!-- <input type="text" readonly="readonly" class="attatch_view"> -->
+						<textarea rows="5" cols="1" readonly="readonly"></textarea>
+						<button>삭제하기</button><br>
+					</div>
+				</div>
+			</td>
+		</tr>	
+	</table>
+	
 	</div>
-	<div class="s2_menu">
-		
-			<ul>
-				<li class="li_head"><img src = "images/menu1/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu1/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu2/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu2/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu3/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu3/5.png"></a></li>
-			</ul>
-			<ul>
-				<li class="li_head"><img src = "images/menu4/1.png"></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/2.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/3.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/4.png"></a></li>
-				<li class="li_body"><a href ="#"><img src = "images/menu4/5.png"></a></li>
-			</ul>
+	<div class="util_wrap">
+		<a href="notice.jsp"><button class="write_cancel">취소하기</button></a>
+		<a href="notice.jsp"><button class="write_summit">작성하기</button></a>
 	</div>
 </section>
 
@@ -127,6 +129,5 @@
 		</div>
 	</div>
 </footer>
-
 </body>
 </html>
