@@ -35,7 +35,7 @@
 <section>
 		
 		<div id="title_wrap">
-			<h1>로그인</h1>
+			<h1>로그인1</h1>
 		</div>
 		<div class = middle>
 			<div class="left">
@@ -43,15 +43,17 @@
 					<div class = "login">U+ID로 로그인하세요</div><br>
 					<div class = "sub">(구)통합아이디로 로그인하면 U+ID전환 화면으로 이동합니다</div>
 				</div>
-				<form>
+				<form action="#">
 				<div class = "input_id">
-					<input type="text" placeholder="U+ID(이메일주소)">
+					<input type="text" placeholder="U+ID(이메일주소)" id="uid">
 				</div>
+				<div id="id_error"></div>
 				<div class = "input_pw">
-					<input type="password" placeholder="비밀번호">
+					<input type="password" placeholder="비밀번호" id="upw">
 				</div>
+				<div id="pw_error"></div>
 				<div class = "login_botton">
-					<a href ="#"><button>로그인하기</button></a>
+					<button id="login_check">로그인하기</button>
 				</div>
 				<div class="login_checkbox">
 					<label>
@@ -130,9 +132,9 @@
 			<div>
 				<select class = "select">
 					<option>바로가기</option>
-					<option><a href="#">회사소개</a></option>
-					<option><a href="#">LG계열사</a></option>
-					<option><a href="#">연체정보조회</a></option>
+					<option>회사소개</option>
+					<option>LG계열사</option>
+					<option>연체정보조회</option>
 				</select>
 			</div>
 			<div class = "footer_icon_wrap">
@@ -145,6 +147,28 @@
 		</div>
 	</div>
 </footer>
+<script type="text/javascript">
+	var check = document.getElementById("login_check");
+	var id = document.getElementById("uid");
+	var pw = document.getElementById("upw");
+	var ide = document.getElementById("id_error");
+	var pwe = document.getElementById("pw_error");
+	check.addEventListener("click", function() {
+		if(id.value==''){
+			ide.innerHTML="아이디를 입력해주세요";
+		}else{
+			ide.innerHTML="";
+		}
+		if(pw.value==''){
+			pwe.innerHTML="비밀번호를 입력해주세요";
+		}else{
+			pwe.innerHTML="";
+		}
+		if(id.value!='' && pw.value!=''){
+			location.href="../index.jsp"
+		}
+	})
 
+</script>
 </body>
 </html>

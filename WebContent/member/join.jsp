@@ -50,8 +50,10 @@
 			</li>
 		</ul>
 	</div>
-		<div class = "sub_title">서비스 이용약관 및 개인정보 처리방침 동의</div>
 		<form>
+		<div class = "sub_title">서비스 이용약관 및 개인정보 처리방침 동의
+			<div id="agreeall"><label><input type="checkbox" id="all">전체 약관 동의</label></div>
+		</div>
 		<div class = "agree_list">1.U+이용약관(필수)
 		<div class ="round_scroll_box">
 		■ LG U+ID 서비스 이용약관
@@ -61,7 +63,7 @@
 		본 약관은 주식회사 LG U+(이하 "회사"라 한다.)에서 제공하는 개별서비스의 ID를 하나의 ID로 사용할 수 있는 서비스인 "LG U+ID 서비스" (이하 "서비스”)를 이용함에 있어 회원과 회사간의 권리, 의무 및 책임사항, 서비스 이용조건 및 절차 등 기본적인 사항을 규정함을 목적으로 합니다.
 		</div>
 		<label class="agree_label">
-		<input type="checkbox" name="agree1" value="agree1">U+이용약관(필수)에 동의함<span class ="span_agree">(*동의해야 회원가입 가능)</span>
+		<input type="checkbox" name="agree1" value="agree1" class="ch">U+이용약관(필수)에 동의함<span class ="span_agree">(*동의해야 회원가입 가능)</span>
 		</label>
 		</div>
 		<div class = "agree_list">2.개인정보 수집ㆍ이용
@@ -76,7 +78,7 @@
 		3) 보유 및 이용 기간 : 회원 가입 및 탈퇴한 날로부터 6개월 동안 보유 및 이용 후 폐기합니다. 단, 소송이나 분쟁 등의 특정한 이유가 있을 때에는 이의 해결시점까지 보유하며, 해당 법령 규정에 의거하여 보존 필요성이 있는 경우에는 보관합니다.
 		</div>
 		<label class="agree_label">
-		<input type="checkbox" name="agree2" value="agree2">개인정보 수집ㆍ이용(필수)에 동의함<span class ="span_agree">(*동의해야 회원가입 가능)</span>
+		<input type="checkbox" name="agree2" value="agree2" class="ch">개인정보 수집ㆍ이용(필수)에 동의함<span class ="span_agree">(*동의해야 회원가입 가능)</span>
 		</label>
 		</div>
 		<div class = "agree_list">3.개인정보 제3자 제공안내
@@ -86,7 +88,7 @@
 		회사, 협력사, 제휴사가 제공하는 이동통신, 유선 및 인터넷 전화, IPTV, FMC 등 방송통신상품, 금융서비스, 결합 및 제휴상품, 스토리지 등 데이터 및 콘텐츠 서비스, 부가서비스, 전자상거래 서비스, 위치정보서비스, IT솔루션, 스마트헬스 서비스 등 각종 서비스 상품과 타 통신사 서비스와 결합된 상품에 대한 홍보, 가입 권유, 프로모션, 이벤트
 		</div>
 		<label class="agree_label">
-		<input type="checkbox" name="agree3" value="agree3">개인정보 제3자 제공안내에 동의함 <span class ="span_agree">(*동의하지 않아도 회원가입 가능)</span>
+		<input type="checkbox" name="agree3" value="agree3" class="ch">개인정보 제3자 제공안내에 동의함 <span class ="span_agree">(*동의하지 않아도 회원가입 가능)</span>
 		</label>
 		</div>
 		<div class = "agree_list">4.광고성 정보 수신
@@ -94,10 +96,10 @@
 		성명, 휴대폰번호, 주소, 단말 정보 등을 해지 시 까지 수집·이용·분석하여 LG U+가 제공하는 이동통신, 인터넷, IPTV, IoT 및 각종 결합·제휴상품 등 서비스의 홍보, 가입권유, 프로모션, 이벤트, 혜택 안내를 위해 수집, 이용 활용하는 것, 동의하면 혜택 및 광고 정보를 전화, 단문메시지, 장문메시지 멀티메시지,WAP 푸시, 이메일, 우편, 앱 안내 및 팝업 등으로 전송
 		</div>
 		<label class="agree_label">
-		<input type="checkbox" name="agree4" value="agree4">광고성 정보 수신에 동의함 <span class ="span_agree">(*동의하지 않아도 회원가입 가능)</span>
+		<input type="checkbox" name="agree4" value="agree4" class="ch">광고성 정보 수신에 동의함 <span class ="span_agree">(*동의하지 않아도 회원가입 가능)</span>
 		</label>
 		</div>
-		<div class="last_agree"><a href="join2.jsp"><input type="button" value="동의하기"></a></div>
+		<div id="last_agree"><input type="button" value="동의하기" ></div>
 		</form>
 	
 </section>
@@ -134,9 +136,9 @@
 			<div>
 				<select class = "select">
 					<option>바로가기</option>
-					<option><a href="#">회사소개</a></option>
-					<option><a href="#">LG계열사</a></option>
-					<option><a href="#">연체정보조회</a></option>
+					<option>회사소개</option>
+					<option>LG계열사</option>
+					<option>연체정보조회</option>
 				</select>
 			</div>
 			<div class = "footer_icon_wrap">
@@ -149,5 +151,42 @@
 		</div>
 	</div>
 </footer>
+<script type="text/javascript">
+//3개 다 체크시 all도 체크되게
+	var all = document.getElementById("all");
+	var ch = document.getElementsByClassName("ch");
+	
+	for (var i = 0; i < ch.length; i++) {
+		ch[i].addEventListener("click", function() {
+			for (var i = 0; i < ch.length; i++) {	
+				if(ch[i].checked){
+					if(i+1 == ch.length){
+						all.checked = true;
+		 			}
+				} else {
+					all.checked = false;
+					break;
+				};		
+			};		
+		}) 
+	}
+//all체크 시 3개 다 체크되게
+
+all.addEventListener("click", function() {
+	for (var i = 0; i < ch.length; i++) {
+		ch[i].checked = this.checked;
+	};
+});
+
+	 var check = document.getElementById("last_agree");
+	check.addEventListener("click", function() {
+		var chs = document.getElementsByClassName("ch");
+		if(ch[0].checked==true && ch[1].checked==true){
+			location.href="join2.jsp";
+		} else {
+			alert("필수약관에 동의해주세요");
+		}
+	});	
+</script>
 </body>
 </html>

@@ -112,9 +112,9 @@
 			<div>
 				<select class = "select">
 					<option>바로가기</option>
-					<option><a href="#">회사소개</a></option>
-					<option><a href="#">LG계열사</a></option>
-					<option><a href="#">연체정보조회</a></option>
+					<option>회사소개</option>
+					<option>LG계열사</option>
+					<option>연체정보조회</option>
 				</select>
 			</div>
 			<div class = "footer_icon_wrap">
