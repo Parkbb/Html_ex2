@@ -254,13 +254,20 @@
 	
 	var last = document.getElementById("last");
 	last.addEventListener("click", function() {
+		var flag = true;
 		if(e_check.value==""){
-			alert("이메일");
 			e_check.focus();
+			flag=false;
 		}
 		if(name_check.value==""){
-			alert("아이디를 입력하세요");
 			name_check.focus();
+			flag=false;
+		}
+		
+		if(flag){
+			location.href="login.jsp";
+		}else{
+			alert("필수항목을 입력해주세요")
 		}
 	});
 </script>
