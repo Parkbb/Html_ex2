@@ -35,7 +35,7 @@
 <!----------------------- section -------------------------------->
 <section>
 	<div class = "title_wrap">
-		아이디 만들기2
+		아이디 만들기
 	</div>
 	<div class = "join_list">
 		<ul>
@@ -63,19 +63,19 @@
 	<table class = "join_table">
 		<tr>
 			<td class = "td_left">이름<span class = "join_notice">*</span></td>
-			<td class = "td_right"><input type="text" name="name" class ="input_text" id="name_check"><br>
+			<td class = "td_right"><input type="text"  name="name" class ="input_text" id="name_check"><br>
 			<span id="namer" class="write_notice"></span></td>
 		</tr>
 		<tr>
 			<td class = "td_left">이메일<span class = "join_notice">*</span></td>
 			<td class = "td_right"><input type="text" name="name" class ="input_text" id="e_check">
-			@<input type="text" name="name" class ="input_text">
-			<select>
-				<option>직접입력</option>
-				<option>네이버</option>
-				<option>구글</option>
-				<option>한메일</option>
-				<option>네이트</option>
+			@<input type="text" name="name" class ="input_text" id="e_check2">
+			<select id="select">
+				<option value="">직접입력</option>
+				<option value="naver.com">네이버</option>
+				<option value="gmail.com">구글</option>
+				<option value="hanmail.net">한메일</option>
+				<option value="nate.com">네이트</option>
 			</select>
 			<br>
 			<span id="er" class="write_notice"></span>
@@ -84,7 +84,7 @@
 		<tr>
 			<td class = "td_left">아이디<span class = "join_notice">*</span></td>
 			<td class = "td_right">
-				<input type="text" name="id"  class ="input_text" id="id_check">
+				<input type="text" name="id" class ="input_text" id="id_check">
 				<button>중복체크</button><br>
 			<span id="idr" class="write_notice"></span>
 				</td>
@@ -270,6 +270,19 @@
 			alert("필수항목을 입력해주세요")
 		}
 	});
+	
+	/* 도메인 셀릭트 JS */
+	var select = document.getElementById("select");
+	var e_check2 = document.getElementById("e_check2");
+	select.addEventListener("change", function() {
+		e_check2.value = this.value;
+		if(e_check2.value != ""){	
+			e_check2.disabled="disabled";
+		}else{
+			e_check2.disabled="";
+		}
+	});
+	
 </script>
 </body>
 </html>
