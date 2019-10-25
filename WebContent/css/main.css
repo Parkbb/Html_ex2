@@ -6,6 +6,14 @@
 	margin-top: 66px;
 	
 }
+.container2{
+	width: 1920px;
+	min-width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 30px;
+}
+
 .s1 > img {
 	margin-bottom: 20px;
 }
@@ -14,8 +22,7 @@
 	margin: auto;
 	
 }
-.s1_images > img{
-}
+
 .s2{
 	margin-top:125px;
 	width: 100%;

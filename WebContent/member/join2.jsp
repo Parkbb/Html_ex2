@@ -280,6 +280,7 @@
 			e_check2.disabled="disabled";
 		}else{
 			e_check2.disabled="";
+			
 		}
 	});
 	
