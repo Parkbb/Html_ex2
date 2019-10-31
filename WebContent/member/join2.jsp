@@ -35,7 +35,7 @@
 <!----------------------- section -------------------------------->
 <section>
 	<div class = "title_wrap">
-		아이디 만들기
+		아이디 만들기1
 	</div>
 	<div class = "join_list">
 		<ul>
@@ -69,7 +69,7 @@
 		<tr>
 			<td class = "td_left">이메일<span class = "join_notice">*</span></td>
 			<td class = "td_right"><input type="text" name="name" class ="input_text" id="e_check">
-			@<input type="text" name="name" class ="input_text" id="e_check2">
+			@<input type="text" name="name" readonly="readonly" class ="input_text" id="e_check2" >
 			<select id="select">
 				<option value="">직접입력</option>
 				<option value="naver.com">네이버</option>
@@ -276,10 +276,15 @@
 	var e_check2 = document.getElementById("e_check2");
 	select.addEventListener("change", function() {
 		e_check2.value = this.value;
+		alert(e_check2.readonly);
 		if(e_check2.value != ""){	
-			e_check2.disabled="disabled";
+			/* e_check2.disabled="disabled"; */
+		 e_check2.setAttribute("readonly","readonly")
+			e_check2.style.backgroundColor="#e8e8e8";
 		}else{
-			e_check2.disabled="";
+			 e_check2.setAttribute("readonly",false) 
+			e_check2.style.backgroundColor="white";
+			/* e_check2.disabled=""; */
 			
 		}
 	});
