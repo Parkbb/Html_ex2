@@ -119,8 +119,26 @@
 
 <!-- javascript jquery로 바꿔야함 -->
 <script type="text/javascript">
-	/* 이름체크 JS */
-	var name_check = document.getElementById("name_check");
+	$(document).scroll(function() {
+		if($(document).scrollTop() < 45){
+			$("#test").css("display", "block")	
+		}else{	
+			$("#test").css("display", "none")
+		}
+	})
+	
+	
+	
+	/* 이름체크  */
+	$("#name_check").blur(function() {
+		if($("#name_check").html()==""){
+			$("#namer").html('이름을 입력해주세요');
+		}else {
+			$("#namer").html("");
+		}  
+	})
+	
+	/* var name_check = document.getElementById("name_check");
 	var namer = document.getElementById("namer");
 	
 	name_check.addEventListener("blur", function() {
@@ -129,9 +147,18 @@
 		}else{
 			namer.innerHTML="";
 		}
-	});
+	}); */
+	
+	
 	/* 이메일체크 JS */
-	var e_check = document.getElementById("e_check");
+	$("#e_check").blur(function() {
+		if($("#e_check").html()==""){
+			$("#er").html("이메일을 입력해주세요");	
+		}else {
+			$("#er").html("");
+		}
+	})
+	/* var e_check = document.getElementById("e_check");
 	var er = document.getElementById("er");
 	
 	e_check.addEventListener("blur", function() {
@@ -140,9 +167,11 @@
 		}else{
 			er.innerHTML="";
 		}
-	});
+	}); */
 	
 	/* 아이디체크JS */
+	
+	
 	var id_check = document.getElementById("id_check");
 	var idr = document.getElementById("idr");
 	
@@ -153,6 +182,8 @@
 			idr.innerHTML="";
 		}
 	});
+	
+	
 	/* 비밀번호체크JS */
 	var pw_check = document.getElementById("pw_check");
 	var pw_check1 = document.getElementById("pw_check1");
@@ -212,22 +243,36 @@
 	});
 	
 	/* 도메인 셀릭트 JS */
-	var select = document.getElementById("select");
+	
+	$("#select").change(function() {
+		var domain = $("#select").val();
+		$("#e_check2").val(domain);
+		if($("#select").val() != ""){
+			
+		$("#e_check2").attr("readonly", "readonly");
+		}else {
+			
+			$("#e_check2").removeAttr("readonly");
+		}
+		
+	})
+	
+	/* var select = document.getElementById("select");
 	var e_check2 = document.getElementById("e_check2");
 	select.addEventListener("change", function() {
 		e_check2.value = this.value;
 		alert(e_check2.readonly);
 		if(e_check2.value != ""){	
-			/* e_check2.disabled="disabled"; */
+			
 		 e_check2.setAttribute("readonly","readonly")
 			e_check2.style.backgroundColor="#e8e8e8";
 		}else{
 			 e_check2.setAttribute("readonly",false) 
 			e_check2.style.backgroundColor="white";
-			/* e_check2.disabled=""; */
+			
 			
 		}
-	});
+	}); */
 	
 </script>
 </body>

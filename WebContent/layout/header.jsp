@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<header>
+<header id=header>
+	<div id = "test">
+	</div>
 	<div class="header_wrap">
 		<div class="logo">
 			<a href="<%= request.getContextPath() %>/index.jsp"><img src = "<%= request.getContextPath() %>/images/logo_uplus.png"></a>
