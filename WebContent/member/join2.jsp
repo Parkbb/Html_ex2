@@ -125,7 +125,7 @@
 		}else{	
 			$("#test").css("display", "none")
 		}
-	})
+	});
 	
 	
 	
